@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resep Engkot Keumamah — Masakan Aceh</title>
+  <style>
+    :root{
+      --bg:#fbfaf8; --card:#ffffff; --muted:#6b7280; --accent:#0f766e; --accent-2:#f97316;
+      --radius:14px; --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#f7f6f3, #eef7f6); color:#0f1724; margin:0; padding:32px}
+    .container{max-width:900px; margin:0 auto}
+
+    .card{background:var(--card); border-radius:var(--radius); box-shadow: 0 8px 30px rgba(15,23,36,0.06); overflow:hidden}
+    .hero{display:grid; grid-template-columns: 1fr 320px; gap:24px; padding:28px}
+    .title{align-self:center}
+    h1{font-size:28px; margin:0 0 6px}
+    .sub{color:var(--muted); font-size:14px}
+
+    .imgwrap{height:220px; border-radius:12px; overflow:hidden; position:relative; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:flex; align-items:center; justify-content:center; color:white}
+    .imgwrap img{width:100%; height:100%; object-fit:cover; display:block}
+    .badge{position:absolute; left:12px; top:12px; background:rgba(0,0,0,0.18); color:#fff; padding:6px 10px; border-radius:999px; font-size:13px}
+
+    .meta{display:flex; gap:12px; margin-top:12px; color:var(--muted); font-size:13px}
+    .section{padding:22px 28px; border-top:1px dashed rgba(15,23,36,0.04)}
+    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+
+    ul.ingredients{list-style:disc; padding-left:20px}
+    ol.steps{padding-left:18px}
+
+    .actions{display:flex; gap:10px; justify-content:flex-end}
+    button{background:var(--accent); color:white; border:none; padding:8px 12px; border-radius:10px; cursor:pointer}
+    button.secondary{background:#e6eef0; color:var(--accent)}
+
+    footer{padding:18px 28px; font-size:13px; color:var(--muted); text-align:center}
+
+    @media (max-width:800px){
+      .hero{grid-template-columns:1fr;}
+      .imgwrap{height:200px}
+      .grid2{grid-template-columns:1fr}
+    }
+
+    /* print */
+    @media print{
+      body{padding:0}
+      .actions, .badge, footer{display:none}
+      .card{box-shadow:none; border-radius:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="article" aria-labelledby="title-resep">
+      <div class="hero">
+        <div class="title">
+          <h1 id="title-resep">Engkot Keumamah</h1>
+          <div class="sub">Resep tradisional Aceh — hidangan gurih berempah, cocok disajikan hangat</div>
+          <div class="meta" aria-hidden="true">
+            <div>⏱️ Waktu: 45 menit</div>
+            <div>🍽️ Porsi: 4 orang</div>
+            <div>🔥 Level: Sedang</div>
+          </div>
+
+          <div style="margin-top:16px" class="actions">
+            <button onclick="window.print()">Cetak</button>
+            <button class="secondary" onclick="copyHTML()">Salin HTML</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="imgwrap" role="img" aria-label="Ilustrasi Engkot Keumamah">
+            <!-- Placeholder illustration: you can ganti dengan <img src="..."> -->
+            <svg width="100%" height="100%" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+              <rect width="600" height="400" fill="rgba(0,0,0,0.08)" />
+              <g fill="white" font-family="sans-serif" font-weight="700" font-size="36">
+                <text x="50%" y="44%" text-anchor="middle">Engkot</text>
+                <text x="50%" y="60%" text-anchor="middle" font-size="24">Keumamah — Aceh</text>
+              </g>
+            </svg>
+          </div>
+          <div style="margin-top:12px; text-align:center; color:var(--muted); font-size:13px">Gantilah gambar dengan foto masakan Anda</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Deskripsi singkat</h2>
+        <p>Engkot Keumamah adalah hidangan tradisional dari Aceh yang menggunakan ikan (atau daging pilihan), rempah Aceh, serta santan atau kuah kental bergantung resep keluarga. Rasanya kaya, pedas sedang, dan aromanya khas karena paduan rempah seperti ketumbar, kunyit, serta bawang.</p>
+      </div>
+
+      <div class="section grid2">
+        <div>
+          <h3>Bahan-bahan</h3>
+          <ul class="ingredients">
+            <li>500 gr ikan kembung atau tenggiri, bersihkan dan potong-potong</li>
+            <li>2 sdm minyak goreng</li>
+            <li>3 siung bawang putih, haluskan</li>
+            <li>4 siung bawang merah, iris tipis</li>
+            <li>1 ruas kunyit, haluskan (bisa pakai bubuk kunyit 1 sdt)</li>
+            <li>1 sdt ketumbar sangrai, tumbuk halus</li>
+            <li>2 batang serai, memarkan</li>
+            <li>3 lembar daun jeruk
+</li>
+            <li>200 ml santan sedang (opsional)</li>
+            <li>Garam dan gula secukupnya</li>
+            <li>Air secukupnya untuk kuah</li>
+            <li>Cabai (sesuai selera) — cabai hijau atau merah</li>
+            <li>Jeruk nipis untuk penyajian</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Peralatan</h3>
+          <ul class="ingredients">
+            <li>Panci atau wajan dalam</li>
+            <li>Sendok kayu</li>
+            <li>Talang dapur (opsional)</li>
+          </ul>
+
+          <h3>Tips</h3>
+          <ul class="ingredients">
+            <li>Gunakan ikan segar untuk aroma terbaik.</li>
+            <li>Untuk rasa lebih kental, tambahkan santan sedikit demi sedikit agar tidak pecah.</li>
+            <li>Jika ingin versi tanpa santan, masak dengan air dan bumbu lebih pekat.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Cara memasak</h3>
+        <ol class="steps">
+          <li>Panaskan minyak di panci. Tumis bawang merah dan bawang putih hingga harum.</li>
+          <li>Masukkan kunyit, ketumbar, dan serai. Tumis sebentar hingga rempah matang dan wangi.</li>
+          <li>Tambahkan potongan ikan, aduk perlahan agar ikan tidak hancur. Masak 2–3 menit.</li>
+          <li>Tuang air secukupnya hingga hampir menutupi ikan. Masukkan daun jeruk dan cabai. Biarkan mendidih dengan api sedang.</li>
+          <li>Jika menggunakan santan, kecilkan api, lalu masukkan santan perlahan sambil diaduk agar tidak pecah. Masak hingga kuah mengental dan ikan matang (sekitar 10 menit).</li>
+          <li>Bumbui dengan garam dan sedikit gula, cicipi. Jika diperlukan, tambahkan perasan jeruk nipis untuk menambah segar.</li>
+          <li>Angkat dan sajikan hangat bersama nasi putih atau ketupat.</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h3>Variasi & Catatan</h3>
+        <p>Untuk versi pedas, tambahkan lebih banyak cabai merah. Anda juga bisa mengganti ikan dengan ayam potong kecil (masak lebih lama sampai daging empuk). Engkot Keumamah tradisional bisa berbeda antar keluarga — jangan ragu menyelaraskan bumbu menurut selera.</p>
+      </div>
+
+      <footer>
+        <div>© Resep tradisional Aceh — dibuat oleh Anda. Selamat memasak!</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyHTML(){
+      const html = document.documentElement.outerHTML;
+      navigator.clipboard.writeText(html).then(()=>{
+        alert('HTML halaman telah disalin ke clipboard.');
+      }).catch(()=>{
+        alert('Tidak bisa menyalin otomatis. Silakan salin manual.');
+      });
+    }
+  </script>
+</body>
+</html>
