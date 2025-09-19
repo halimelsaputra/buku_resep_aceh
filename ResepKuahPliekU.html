@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Resep Kuah Pliek U (Sayur Khas Aceh)</title>
   <style>
+     .tombol-catatan {
+        background-color: #007bff; /* Warna biru */
+        color: white;             /* Warna tulisan putih */
+        padding: 10px 15px;       /* Jarak tulisan dari tepi tombol */
+        text-decoration: none;    /* Menghilangkan garis bawah link */
+        border-radius: 5px;       /* Membuat sudut tombol jadi bulat */
+        display: inline-block;    /* Agar padding bisa diterapkan dengan benar */
+        font-family: sans-serif;  /* Jenis tulisan yang rapi */
+        transition: background-color 0.3s; /* Efek transisi saat disentuh mouse */
+         }
+
+         .tombol-catatan:hover {
+        background-color: #0056b3; /* Warna biru lebih gelap saat disentuh mouse */
+        }
+        
     :root{--bg:#fff;--card:#f8fafc;--accent:#2b6cb0;--muted:#6b7280}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;color:#0f172a;background:linear-gradient(180deg,#eef2ff, #fff);padding:24px}
     .container{max-width:800px;margin:0 auto}
@@ -122,5 +137,6 @@
       });
     }
   </script>
+  <a href="kurang_garam.html" class="tombol-catatan">Lihat Catatan Pengurangan Garam</a>
 </body>
 </html>
